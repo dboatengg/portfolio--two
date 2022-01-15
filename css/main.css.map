@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,8BAA8B",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/partials/_variables.scss",
+        "../sass/partials/mixins.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
