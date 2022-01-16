@@ -310,7 +310,11 @@ a {
             align-items: start;
   }
   .copyright {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+  }
+  .social {
+    font-size: 1.4rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
