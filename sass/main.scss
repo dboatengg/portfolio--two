@@ -1,2 +1,12 @@
 @import './partials/variables';
 @import './partials/mixins.scss';
+
+/**********reset**********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+}
