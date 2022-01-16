@@ -268,7 +268,7 @@ a {
 /********footer***********/
 .footer {
   margin-top: 10rem;
-  padding: 3rem;
+  padding: 3rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,6 +292,10 @@ a {
 
 .social__link:not(:last-child) {
   margin-right: 3rem;
+}
+
+.copyright {
+  color: #2429AF;
 }
 
 /*****media query********/
