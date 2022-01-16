@@ -199,6 +199,10 @@ a {
     .project__img {
         order: 1;
     }
+    .manage__link {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
 
 

@@ -256,6 +256,13 @@ a {
         -ms-flex-order: 1;
             order: 1;
   }
+  .manage__link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 /********footer***********/
