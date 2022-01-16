@@ -91,3 +91,48 @@ body {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
+
+
+
+
+/*********about**************/
+.about {
+    margin-top: 15rem;
+}
+.about__text {
+    @include flex-s-b;
+}
+.about__title {
+    font-size: $heading__1;
+    letter-spacing: -3%;
+    line-height: 97.2%;
+}
+.about__paragraph {
+    font-size: $heading__2;
+}
+.arrow {
+    margin-top: 7rem;
+}
+
+
+/*****media query***************/
+@media only screen and (max-width: 760px){
+    .about {
+        margin: 7rem auto;
+    }
+    .about__text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about__title {
+        margin-bottom: 2rem;
+        font-size: 4rem;
+    }
+    .about__paragraph {
+        font-size: 2.5rem;
+    }
+    .arrow {
+        margin-top: 4rem;
+        width: 3rem;
+    }
+}
