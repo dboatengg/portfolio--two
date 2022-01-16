@@ -210,7 +210,8 @@ a {
 /********footer***********/
 .footer {
     margin-top: 10rem;
-    padding: 3rem auto;
+    margin-bottom: 5rem;
+    // padding: 3rem auto;
     @include flex-s-b;
 }
 .social__link {
