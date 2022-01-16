@@ -200,3 +200,24 @@ a {
         order: 1;
     }
 }
+
+
+
+/********footer***********/
+.footer {
+    margin-top: 10rem;
+    padding: 3rem;
+    @include flex-s-b;
+}
+.social__link {
+    color: $main-black;
+    transition: 0.3s ease-in-out;
+}
+.social__link:hover {
+    text-decoration: underline;
+}
+.social__link:not(:last-child) {
+    margin-right: 3rem;
+}
+
+/*****media query********/
