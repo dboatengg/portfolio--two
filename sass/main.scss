@@ -51,6 +51,11 @@ a {
     color: $main-black;
     margin: auto 2rem;
     font-size: $navigation;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.nav__link:hover {
+    color: $secondary;
 }
 .logo {
     width: 6.746rem;

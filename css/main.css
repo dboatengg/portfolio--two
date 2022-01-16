@@ -73,6 +73,13 @@ a {
   color: #181717;
   margin: auto 2rem;
   font-size: 2.1rem;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  color: #2429AF;
 }
 
 .logo {
