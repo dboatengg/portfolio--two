@@ -227,6 +227,9 @@ a {
 .copyright {
     color: $secondary;
 }
+.social {
+    font-size: $;
+}
 /*****media query********/
 @media only screen and (max-width: 760px) {
     .footer {
