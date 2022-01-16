@@ -49,10 +49,6 @@ a {
   }
 }
 
-.main {
-  height: 100vh;
-}
-
 /**********nav-menu*******/
 .nav {
   display: -webkit-box;
@@ -152,8 +148,13 @@ a {
 
 /*********about**************/
 .about {
-  margin-top: 15rem;
-  margin-bottom: 5rem;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .about__text {
@@ -179,7 +180,7 @@ a {
 }
 
 .arrow {
-  margin-top: 10rem;
+  margin-top: 7rem;
   padding: 2rem;
 }
 
@@ -203,10 +204,6 @@ a {
   }
   .about__paragraph {
     font-size: 2.5rem;
-  }
-  .arrow {
-    margin-top: 4rem;
-    width: 3rem;
   }
 }
 

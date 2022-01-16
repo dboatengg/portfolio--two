@@ -38,9 +38,6 @@ a {
     }
 }
 
-.main {
-    height: 100vh;
-}
 /**********nav-menu*******/ 
 .nav {
     @include flex-s-b;
@@ -124,8 +121,9 @@ a {
 
 /*********about**************/
 .about {
-    margin-top: 15rem;
-    margin-bottom: 5rem
+    height: 80vh;
+    display: flex;
+    align-items: center;
 }
 .about__text {
     @include flex-s-b;
@@ -139,7 +137,7 @@ a {
     font-size: $heading__2;
 }
 .arrow {
-    margin-top: 10rem;
+    margin-top: 7rem;
     padding: 2rem;
 }
 
@@ -159,10 +157,6 @@ a {
     }
     .about__paragraph {
         font-size: 2.5rem;
-    }
-    .arrow {
-        margin-top: 4rem;
-        width: 3rem;
     }
 }
 
