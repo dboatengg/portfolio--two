@@ -258,6 +258,15 @@ a {
   margin-bottom: 2rem;
 }
 
+/********project page***********/
+.project__title {
+  font-size: 3.2rem;
+  margin: 10rem 0;
+  text-align: left;
+  width: 60%;
+  text-decoration: underline;
+}
+
 /*******media query**********/
 @media only screen and (max-width: 760px) {
   .manage {
