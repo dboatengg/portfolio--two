@@ -364,6 +364,10 @@ img {
 }
 
 /**************about page*************/
+.about__img {
+  border-radius: 0.5rem;
+}
+
 .who {
   gap: 5rem;
   margin-top: 15rem;
