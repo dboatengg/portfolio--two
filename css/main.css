@@ -405,11 +405,17 @@ img {
 }
 
 .msg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  justify-items: end;
   margin: 5rem 0;
+  gap: 20rem;
 }
 
 .msg__left, .email {
@@ -432,6 +438,10 @@ img {
           flex-direction: column;
 }
 
+.resume {
+  text-decoration: underline;
+}
+
 /************media query***********/
 @media only screen and (max-width: 768px) {
   .who__left {
@@ -447,8 +457,22 @@ img {
   .who__description {
     font-size: 2.3rem;
   }
+  .msg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .email, .resume {
+    font-size: 1.8rem;
+  }
   .msg__left {
     margin-bottom: 3rem;
+    font-size: 2rem;
   }
 }
 
