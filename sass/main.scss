@@ -307,11 +307,15 @@ img {
     @include align-grid;
     margin: 5rem 0;
 }
-.msg__left {
-    font-size: $heading__2;
+.msg__left, .email {
+    font-size: 2.5rem;
 }
-.email {
-    font-size: $heading__2;
+.msg__right {
+    // @include flex-s-b;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
 }
 /************media query***********/
 @media only screen and (max-width: 768px){
@@ -324,6 +328,10 @@ img {
     .who__description {
         font-size: 2.6rem;
     }
+    .msg__left {
+        margin-bottom: 3rem;
+    }
+
 }
 
 @media only screen and (max-width: 376px){

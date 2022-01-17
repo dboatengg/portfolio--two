@@ -396,12 +396,24 @@ img {
   margin: 5rem 0;
 }
 
-.msg__left {
-  font-size: 3.2rem;
+.msg__left, .email {
+  font-size: 2.5rem;
 }
 
-.email {
-  font-size: 3.2rem;
+.msg__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 /************media query***********/
@@ -418,6 +430,9 @@ img {
   }
   .who__description {
     font-size: 2.6rem;
+  }
+  .msg__left {
+    margin-bottom: 3rem;
   }
 }
 
