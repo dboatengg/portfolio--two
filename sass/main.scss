@@ -23,6 +23,10 @@ a {
     text-decoration: none;
     color: $secondary;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 /*******grid**************/
 .grid {
     display: grid;
@@ -121,21 +125,21 @@ a {
 
 
 /*********about**************/
-.about {
+.hero {
     height: 75vh;
     display: flex;
     align-items: center;
 }
-.about__text {
+.hero__text {
     @include flex-s-b;
     gap: 10rem;
 }
-.about__title {
+.hero__title {
     font-size: $heading__1;
     letter-spacing: -3%;
     line-height: 97.2%;
 }
-.about__paragraph {
+.hero__paragraph {
     font-size: $heading__2;
 }
 .arrow {
@@ -143,38 +147,33 @@ a {
     padding: 2rem;
 }
 
-
-/*****media query***************/
-@media only screen and (max-width: 760px){
-    .about {
+/************media query************/
+@media only screen and (max-width: 768px){
+    .hero {
         margin: 7rem auto;
     }
-    .about__text {
+    .hero__text {
         flex-direction: column;
         align-items: flex-start;
         gap: 0;
     }
-    .about__title {
+    .hero__title {
         margin-bottom: 2rem;
         font-size: 4rem;
     }
-    .about__paragraph {
+    .hero__paragraph {
         font-size: 2.3rem;
     }
 }
 
 @media only screen and (max-width: 376px){
-    .about {
+    .hero {
         height: 60vh;
     }
 }
 
 
 /***********projects**********/
-.project__img {
-    max-width: 100%;
-    height: auto;
-}
 .manage {
     align-items: center;
     justify-items: end;
@@ -199,26 +198,8 @@ a {
     margin-bottom: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-/********project page***********/
-.project__title {
-    font-size: $heading__2;
-    margin: 10rem 0;
-    text-align: left;
-    width: 60%;
-    text-decoration: underline;
-}
-
 /*******media query**********/
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 768px){
     .manage {
         justify-items: start;
     }
@@ -235,7 +216,12 @@ a {
         flex-direction: column;
         gap: 2rem;
     }
+    .project__title {
+        width: 80%;
+    }
 }
+
+
 
 
 
@@ -260,7 +246,7 @@ a {
     color: $secondary;
 }
 /*****media query********/
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
     .footer {
         flex-direction: column;
         align-items: start;
@@ -271,5 +257,80 @@ a {
     }
     .social {
         font-size: 1.4rem;
+    }
+}
+
+
+
+
+
+/********project page***********/
+.project__title {
+    font-size: $heading__2;
+    margin: 10rem 0;
+    text-align: left;
+    width: 60%;
+    text-decoration: underline;
+}
+
+
+
+/**************about page*************/
+.who {
+    gap: 5rem;
+    margin-top: 15rem;
+    @include align-grid;
+
+}
+.who__title {
+    font-size: $heading__1;
+}
+.who__description {
+    font-size: $heading__2;
+}
+.who__title {
+    margin-bottom: 2rem;
+}
+.software {
+    margin-top: 4rem;
+}
+.software__title {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.skills {
+    margin-top: 10rem;
+    width: 70%;
+    margin-bottom: 5rem;
+}
+.msg {
+    @include align-grid;
+    margin: 5rem 0;
+}
+.msg__left {
+    font-size: $heading__2;
+}
+.email {
+    font-size: $heading__2;
+}
+/************media query***********/
+@media only screen and (max-width: 768px){
+    .who__left {
+        order: 2;
+    }
+    .who__right {
+        order: 1;
+    }
+    .who__description {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (max-width: 376px){
+    .who__title {
+        font-size: 4.2rem;
+    }
+    .who {
+        margin-top: 5rem;
     }
 }
