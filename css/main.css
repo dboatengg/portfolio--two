@@ -351,6 +351,12 @@ img {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 768px) {
+  .project__title {
+    width: 90%;
+  }
+}
+
 /**************about page*************/
 .who {
   gap: 5rem;
@@ -429,7 +435,7 @@ img {
             order: 1;
   }
   .who__description {
-    font-size: 2.6rem;
+    font-size: 2.3rem;
   }
   .msg__left {
     margin-bottom: 3rem;
