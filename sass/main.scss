@@ -290,6 +290,10 @@ img {
 
 
 /**************about page*************/
+.about {
+    max-width: 1100px;
+    margin: 0 auto;
+}
 .about__img {
     border-radius: 0.5rem;
 }
@@ -299,10 +303,10 @@ img {
     @include align-grid;
 }
 .who__title {
-    font-size: $heading__1;
+    font-size: 4rem;
 }
 .who__description {
-    font-size: $heading__2;
+    font-size: 2.6rem;
 }
 .who__title {
     margin-bottom: 2rem;
@@ -325,7 +329,7 @@ img {
     gap: 20rem;
 }
 .msg__left, .email {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 .msg__right {
     display: flex;
