@@ -27,6 +27,11 @@ img {
     max-width: 100%;
     height: auto;
 }
+.active {
+    text-decoration: underline;
+    text-decoration-color: $secondary;
+    text-decoration-line: 3px;
+}
 /*******grid**************/
 .grid {
     display: grid;
@@ -232,7 +237,6 @@ img {
 .footer {
     margin-top: 10rem;
     margin-bottom: 5rem;
-    // padding: 3rem auto;
     @include flex-s-b;
 }
 .social__link {
@@ -293,7 +297,6 @@ img {
     gap: 5rem;
     margin-top: 15rem;
     @include align-grid;
-
 }
 .who__title {
     font-size: $heading__1;
@@ -325,7 +328,6 @@ img {
     font-size: 2.5rem;
 }
 .msg__right {
-    // @include flex-s-b;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -355,7 +357,7 @@ img {
     }
     .msg__left {
         margin-bottom: 3rem;
-        font-size: 2rem;
+        font-size: 2remf;
     }
 
 }
