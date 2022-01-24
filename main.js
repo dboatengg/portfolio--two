@@ -1,5 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__menu");
+const navLink = document.querySelectorAll(".nav__link");
 
 hamburger.addEventListener("click", mobileMenu);
 
@@ -8,15 +9,10 @@ function mobileMenu() {
   navMenu.classList.toggle("active");
 }
 
-const navLink = document.querySelectorAll(".nav__link");
 
 navLink.forEach((n) => n.addEventListener("click", closeMenu));
 
 function closeMenu() {
   hamburger.classList.remove("active");
   navMenu.classList.remove("active");
-}
-
-function lockScroll() {
-  document.body.classList.toggle("lock-scroll");
 }
