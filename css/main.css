@@ -160,6 +160,9 @@ img {
   .lock-scroll {
     overflow: hidden;
   }
+  body.lock-scroll {
+    overflow: hidden;
+  }
 }
 
 /*********about**************/
