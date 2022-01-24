@@ -240,11 +240,6 @@ img {
   margin: 4rem auto;
 }
 
-.manage img {
-  -webkit-box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.05);
-}
-
 .manage__sub-description {
   font-size: 1.4rem;
 }
