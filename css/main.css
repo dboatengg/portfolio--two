@@ -34,7 +34,6 @@ img {
 }
 
 .active {
-  text-decoration: underline;
   -webkit-text-decoration-color: #2429AF;
           text-decoration-color: #2429AF;
   -webkit-text-decoration-line: 3px;

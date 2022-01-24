@@ -28,7 +28,7 @@ img {
     height: auto;
 }
 .active {
-    text-decoration: underline;
+    // text-decoration: underline;
     text-decoration-color: $secondary;
     text-decoration-line: 3px;
 }
@@ -127,6 +127,7 @@ img {
     .lock-scroll {
         overflow: hidden;
     }
+    
 }
 
 
