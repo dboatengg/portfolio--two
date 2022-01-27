@@ -21,6 +21,7 @@ function closeMenu() {
   navMenu.classList.remove("active");
 }
 
+
 //add the overflow function
 function removeOverflow() {
   document.body.classList.remove('lock-scroll')
