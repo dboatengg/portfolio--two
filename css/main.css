@@ -429,6 +429,22 @@
   text-decoration: underline;
 }
 
+.blog button {
+  border: 1px solid #606060;
+  outline: none;
+  padding: 1.2rem 2.4rem;
+  background-color: transparent;
+  color: #181717;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.blog button:hover {
+  border: 2px solid #606060;
+  background-color: #606060;
+  color: #f3f3f3;
+}
+
 /**********css reset**********/
 html {
   font-size: 62.5%;
