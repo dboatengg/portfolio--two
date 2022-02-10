@@ -457,6 +457,15 @@
   color: #f3f3f3;
 }
 
+.blog__top {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.blog__one {
+  margin-top: 0;
+}
+
 /**********css reset**********/
 html {
   font-size: 62.5%;

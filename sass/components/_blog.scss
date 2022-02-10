@@ -1,3 +1,5 @@
 .blog button {border: 1px solid $main-gray;outline: none;padding: 1.2rem 2.4rem;background-color: transparent;color: $main-black;transition: 0.3s ease-in-out;}
 .blog button:hover{border: 2px solid $main-gray;background-color: $main-gray;color: $main-white;}
 // .read-all {display: flex;justify-content: center;align-items: center;margin: 3rem 0;border: 1px solid $main-gray;color: $main-black;}
+.blog__top{text-align: center;margin-top: 2rem;}
+.blog__one{margin-top: 0;}
