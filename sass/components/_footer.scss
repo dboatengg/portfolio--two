@@ -1,4 +1,4 @@
-
+@import '../partials/variables';
 /********footer***********/
 .footer {
     margin-top: 10rem;
@@ -6,11 +6,15 @@
     @include flex-s-b;
 }
 .social__link {
-    color: $main-black;
     transition: 0.3s ease-in-out;
     font-size: 25px;
     color: $main-black;
 }
+.social__link i {
+    color: $main-black;
+    transition: 0.2s color ease-in-out;
+}
+.social__link i:hover{color: $main-gray;}
 .social__link:not(:last-child) {
     margin-right: 3rem;
 }

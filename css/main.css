@@ -294,6 +294,9 @@
   }
 }
 
+/*************colors*********/
+/*******text*********/
+/*****font weight*******/
 /********footer***********/
 .footer {
   margin-top: 10rem;
@@ -310,11 +313,20 @@
 }
 
 .social__link {
-  color: #181717;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-size: 25px;
   color: #181717;
+}
+
+.social__link i {
+  color: #181717;
+  -webkit-transition: 0.2s color ease-in-out;
+  transition: 0.2s color ease-in-out;
+}
+
+.social__link i:hover {
+  color: #606060;
 }
 
 .social__link:not(:last-child) {
