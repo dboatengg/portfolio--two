@@ -8913,3 +8913,9 @@
 [0210/080918.558:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0210/082552.189:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
 [0210/082557.197:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0210/091736.442:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0210/091737.073:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0210/091741.804:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0210/091742.084:WARNING:dns_config_service_win.cc(668)] Failed to read DnsConfig.
+[0210/112524.295:INFO:CONSOLE(1)] "Long rAF frame-time", source: file:///C:/Program%20Files/Adobe/Adobe%20Photoshop%202020/Required/www-rich-tooltips/build/external.js (1)
+[0210/112530.355:ERROR:backend_impl.cc(1062)] Critical error found -8

@@ -64,7 +64,7 @@
   gap: 20rem;
 }
 
-.msg__left, .email {
+.msg__left {
   font-size: 2.2rem;
 }
 
@@ -75,7 +75,18 @@
 }
 
 .resume {
-  text-decoration: underline;
+  border: 1px solid #606060;
+  background-color: transparent;
+  padding: 1.2rem 2.5rem;
+  color: #181717;
+  font-size: 1.6rem;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.resume:hover {
+  background-color: #181717;
+  color: #f3f3f3;
 }
 
 /************media query***********/
@@ -102,9 +113,6 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-  }
-  .email, .resume {
-    font-size: 1.8rem;
   }
   .msg__left {
     margin-bottom: 3rem;
