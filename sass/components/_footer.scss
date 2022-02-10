@@ -1,0 +1,34 @@
+
+/********footer***********/
+.footer {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    @include flex-s-b;
+}
+.social__link {
+    color: $main-black;
+    transition: 0.3s ease-in-out;
+    font-size: 25px;
+    color: $main-black;
+}
+.social__link:not(:last-child) {
+    margin-right: 3rem;
+}
+.copyright {
+    color: $main-black;
+}
+/*****media query********/
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: start;
+    }
+    .copyright {
+        margin-bottom: 2.5rem;
+        font-size: 1.6rem;
+    }
+    .social {
+        font-size: 1.4rem;
+    }
+}
+
