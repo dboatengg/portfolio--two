@@ -423,9 +423,6 @@
   .project__title {
     width: 80%;
   }
-}
-
-@media only screen and (max-width: 768px) {
   .project__title {
     width: 90%;
     margin-top: 8rem;
@@ -459,7 +456,7 @@
 
 .blog__top {
   text-align: center;
-  margin-top: 2rem;
+  margin: 3rem;
 }
 
 .blog__one {
