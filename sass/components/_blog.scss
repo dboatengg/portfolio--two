@@ -2,7 +2,7 @@
     background-color: transparent;color: $main-black;
     transition: 0.3s ease-in-out;
 }
-.blog button:hover{border: 2px solid $main-gray;background-color: $main-gray;color: $main-white;}
+.blog button:hover{border: 1px solid $main-gray;background-color: $main-gray;color: $main-white;}
 .blog__top{text-align: center;margin: 3rem;}
 .blog__one{margin-top: 0;}
 // .read-all {display: flex;justify-content: center;align-items: center;margin: 3rem 0;border: 1px solid $main-gray;color: $main-black;}

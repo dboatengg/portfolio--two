@@ -1,3 +1,4 @@
+/***********abstracts*************/
 /*************colors*********/
 /*******text*********/
 /*****font weight*******/
@@ -456,7 +457,7 @@
 }
 
 .blog button:hover {
-  border: 2px solid #606060;
+  border: 1px solid #606060;
   background-color: #606060;
   color: #f3f3f3;
 }
