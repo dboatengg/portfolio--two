@@ -1,51 +1,17 @@
 /**************about page*************/
-.about {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-.about__img {
-    border-radius: 0.5rem;
-}
-.who {
-    gap: 5rem;
-    margin-top: 15rem;
-    @include align-grid;
-}
-.who__title {
-    font-size: 4rem;
-}
-.who__description {
-    font-size: 2.4rem;
-}
-.who__title {
-    margin-bottom: 2rem;
-    font-size: 4rem;
-    line-height: 1.2;
-}
-.software {
-    margin-top: 4rem;
-}
-.software__title {
-    text-decoration: underline;
-    font-weight: bold;
-}
-.skills {
-    margin-top: 10rem;
-    width: 70%;
-    margin-bottom: 5rem;
-}
-.msg {
-    @include flex-s-b;
-    padding: 5rem 0;
-    gap: 20rem;
-}
-.msg__left{
-    font-size: 2.2rem;
-}
-.msg__right {
-    display: grid;
-    gap: 2rem;
-}
+.about {max-width: 1100px;margin: 0 auto;}
+.about__img {border-radius: 0.5rem;}
+.who {gap: 5rem;margin-top: 15rem;@include align-grid;}
+.who__title {font-size: 4rem;}
+.who__description {font-size: 2.4rem;}
+.who__title {margin-bottom: 2rem;font-size: 4rem;line-height: 1.2;}
+.software {margin-top: 4rem;}
+.software__title {text-decoration: underline;font-weight: bold;}
+.skills {margin-top: 10rem;width: 70%;margin-bottom: 5rem;}
+.msg {@include flex-s-b;padding: 5rem 0;gap: 20rem;}
+.msg__left{font-size: 2.2rem;}
+.msg__right {display: grid;gap: 2rem;}
+
 .resume {
     border: 1px solid $main-gray;
     background-color: transparent;
@@ -54,38 +20,18 @@
     font-size: 1.6rem;
     transition: 0.2s ease-in-out;
 }
-.resume:hover{
-    background-color: $main-black;
-    color: $main-white;
-}
+.resume:hover{background-color: $main-black;color: $main-white;}
 /************media query***********/
 @media only screen and (max-width: 768px){
-    .who__left {
-        order: 2;
-    }
-    .who__right {
-        order: 1;
-    }
-    .who__description {
-        font-size: 2rem;
-    }
-    .msg {
-        flex-direction: column;
-        gap: 3rem;
-        align-items: flex-start;
-    }
-    .msg__left {
-        margin-bottom: 3rem;
-        font-size: 2remf;
-    }
+    .who__left {order: 2;}
+    .who__right {order: 1;}
+    .who__description {font-size: 2rem;}
+    .msg {flex-direction: column;gap: 3rem;align-items: flex-start;}
+    .msg__left {margin-bottom: 3rem;font-size: 2remf;}
 
 }
 
 @media only screen and (max-width: 376px){
-    .who__title {
-        font-size: 4.2rem;
-    }
-    .who {
-        margin-top: 5rem;
-    }
+    .who__title {font-size: 4.2rem;}
+    .who {margin-top: 5rem;}
 }
