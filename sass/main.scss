@@ -11,16 +11,15 @@
 @import './components/blog';
 
 
-
 /**********css reset**********/
 html {font-size: 62.5%;scroll-behavior: smooth;}
 * {margin: 0;padding: 0;box-sizing: border-box;}
 body {font-family: 'DM Sans', sans-serif;background-color: $main-white;font-size: 1.8rem;
-    width: 90%;margin: 0 auto !important;max-width: 120rem;}
+    width: 90%;margin: 0 auto !important;max-width: 120rem;font-weight: 300;}
 a {text-decoration: none;color: $secondary;}
 img {max-width: 100%;height: auto;}
+h1,h2,h3{font-family: "Oswald";}
 .active {text-decoration-color: $secondary;text-decoration-line: 3px;}
-
 
 /*******grid**************/
 .grid {display: grid;}
@@ -30,4 +29,3 @@ img {max-width: 100%;height: auto;}
 @media only screen and (max-width: 760px){
     .grid--1x2 {grid-template-columns: 1fr}
 }
-

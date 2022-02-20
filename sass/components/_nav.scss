@@ -1,5 +1,5 @@
 /**********nav-menu*******/ 
-.nav {@include flex-s-b;margin: 5rem auto;}
+.nav {@include flex-s-b;margin: 5rem auto;font-family: 'Oswald';}
 .nav__item {list-style-type: none;display: inline-block;}
 .nav__link {text-decoration: none;color: $main-black;margin: auto 2rem;
     font-size: $navigation;transition: 0.3s ease-in-out;
@@ -45,7 +45,7 @@
 /*********about**************/
 .hero {height: 75vh;display: flex;align-items: center;}
 .hero__text {@include flex-s-b;gap: 10rem;}
-.hero__title {font-size: $heading__1;letter-spacing: -3%;line-height: 97.2%;}
+.hero__title {font-size: $heading__1;letter-spacing: -3%;line-height: 97.2%;font-weight: 500;}
 .hero__paragraph {font-size: $heading__2;}
 .arrow {margin-top: 7rem;padding: 2rem;}
 
