@@ -1,5 +1,7 @@
 /***********abstracts*************/
-/*************colors*********/
+/*************light mode*********/
+/**********dark mode********/
+/**********darker mode********/
 /*******text*********/
 /*****font weight*******/
 /******components********/
@@ -81,7 +83,7 @@
 }
 
 .resume {
-  border: 1px solid #606060;
+  border: 1px solid #181717;
   background-color: transparent;
   padding: 1.2rem 2.5rem;
   color: #181717;
@@ -166,10 +168,6 @@
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
   font-weight: 500;
-}
-
-.nav__link:hover {
-  color: #2429AF;
 }
 
 .logo {
@@ -316,7 +314,9 @@
   }
 }
 
-/*************colors*********/
+/*************light mode*********/
+/**********dark mode********/
+/**********darker mode********/
 /*******text*********/
 /*****font weight*******/
 /********footer***********/
@@ -345,10 +345,6 @@
   color: #181717;
   -webkit-transition: 0.2s color ease-in-out;
   transition: 0.2s color ease-in-out;
-}
-
-.social__link i:hover {
-  color: #606060;
 }
 
 .social__link:not(:last-child) {
@@ -461,7 +457,7 @@
 }
 
 .blog button {
-  border: 1px solid #606060;
+  border: 1px solid #181717;
   outline: none;
   padding: 1.2rem 2.4rem;
   background-color: transparent;
@@ -471,8 +467,8 @@
 }
 
 .blog button:hover {
-  border: 1px solid #606060;
-  background-color: #606060;
+  border: 1px solid #181717;
+  background-color: #181717;
   color: #f3f3f3;
 }
 
@@ -506,11 +502,12 @@ body {
   margin: 0 auto !important;
   max-width: 120rem;
   font-weight: 300;
+  color: #181717;
 }
 
 a {
   text-decoration: none;
-  color: #2429AF;
+  color: #181717;
 }
 
 img {
@@ -520,13 +517,6 @@ img {
 
 h1, h2, h3 {
   font-family: "Oswald";
-}
-
-.active {
-  -webkit-text-decoration-color: #2429AF;
-          text-decoration-color: #2429AF;
-  -webkit-text-decoration-line: 3px;
-          text-decoration-line: 3px;
 }
 
 /*******grid**************/
@@ -548,5 +538,25 @@ h1, h2, h3 {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
+}
+
+/***dark/light mode****/
+.dark-btn {
+  position: fixed;
+  right: 5%;
+  bottom: 60px;
+  background-color: #fdb54a;
+  outline: none;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.dark-btn:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
