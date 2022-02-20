@@ -75,6 +75,10 @@
   gap: 2rem;
 }
 
+.readmore__title {
+  margin: 1rem 0;
+}
+
 .resume {
   border: 1px solid #606060;
   background-color: transparent;
