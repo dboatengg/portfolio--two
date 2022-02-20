@@ -3,7 +3,7 @@
 .about__img {border-radius: 0.5rem;}
 .who {gap: 5rem;margin-top: 15rem;@include align-grid;}
 .who__title {font-size: 4rem;}
-.who__description, .readmore {font-size: 2.2rem;}
+.who__description, .readmore {font-size: 2.2rem;line-height: 1.7;}
 .who__title {margin-bottom: 2rem;font-size: 4rem;line-height: 1.2;}
 .software {margin-top: 4rem;}
 .software__title {text-decoration: underline;font-weight: bold;}
@@ -25,7 +25,7 @@
 @media only screen and (max-width: 768px){
     .who__left {order: 2;}
     .who__right {order: 1;}
-    .who__description {font-size: 2rem;}
+    .who__description,.readmore {font-size: 2rem;}
     .msg {flex-direction: column;gap: 3rem;align-items: flex-start;}
     .msg__left {margin-bottom: 3rem;font-size: 2remf;}
     .readmore{margin-top: 3rem;}
