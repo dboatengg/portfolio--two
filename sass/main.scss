@@ -1,38 +1,80 @@
 /***********abstracts*************/
-@import './partials/variables';
-@import './partials/mixins.scss';
-
+@import "./partials/variables";
+@import "./partials/mixins.scss";
 
 /******components********/
-@import './components/about';
-@import './components/nav';
-@import './components/footer';
-@import './components/project';
-@import './components/blog';
-
+@import "./components/about";
+@import "./components/nav";
+@import "./components/footer";
+@import "./components/project";
+@import "./components/blog";
 
 /**********css reset**********/
-html {font-size: 62.5%;scroll-behavior: smooth;}
-* {margin: 0;padding: 0;box-sizing: border-box;}
-body {font-family: 'DM Sans', sans-serif;background-color: $main-white;font-size: 1.8rem;
-    width: 90%;margin: 0 auto !important;max-width: 120rem;font-weight: 300;color: $text-color;}
-a {text-decoration: none;color: $main-black;}
-img {max-width: 100%;height: auto;}
-h1,h2,h3{font-family: "Oswald";}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: $main-white;
+  font-size: 1.8rem;
+  width: 90%;
+  margin: 0 auto !important;
+  max-width: 120rem;
+  font-weight: 300;
+  color: $text-color;
+}
+a {
+  text-decoration: none;
+  color: $main-black;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3 {
+  font-family: "Oswald";
+}
 // .active {text-decoration-color: $secondary;text-decoration-line: 3px;}
 
 /*******grid**************/
-.grid {display: grid;}
-.grid--1x2 {grid-template-columns: 1fr 1fr;grid-template-rows: 1fr}
-
-/*********media query*********/ 
-@media only screen and (max-width: 760px){
-    .grid--1x2 {grid-template-columns: 1fr}
+.grid {
+  display: grid;
+}
+.grid--1x2 {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
+/*********media query*********/
+@media only screen and (max-width: 760px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr;
+  }
+}
 
 /***dark/light mode****/
-.dark-btn {position: fixed;right: 5%;bottom: 60px;background-color: #fdb54a;outline: none;
-    border: none;padding: 1.5rem;border-radius: 50%;cursor: pointer;opacity: 0.8;transition: 0.3s ease-in-out;}
+.dark-btn {
+  position: fixed;
+  right: 5%;
+  bottom: 60px;
+  background-color: #fdb54a;
+  outline: none;
+  border: none;
+  padding: 1.7rem;
+  border-radius: 30%;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s ease-in-out;
+}
 
-.dark-btn:hover{opacity: 1;}
+.dark-btn:hover {
+  opacity: 1;
+}
