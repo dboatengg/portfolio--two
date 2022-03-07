@@ -2,7 +2,9 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav__menu");
 const navLink = document.querySelectorAll(".nav__link");
-const darkBtn = document.querySelectorAll(".dark-btn");
+const darkBtn = document.querySelector(".dark-btn");
+const arrow = document.querySelector(".arrow");
+const logo = document.getElementById("logo");
 // const body = document.getElementsByTagName("body");
 
 function mobileMenu() {
@@ -27,7 +29,27 @@ function removeOverflow() {
   document.body.classList.remove("lock-scroll");
 }
 
-// implement dark mode functionality
-darkBtn.addEventListener("click", () => {
-  document.body.classList.add("dark-mode");
-});
+//change logo and arrow on butotn click
+function changeImg() {
+  // document.body.classList.toggle("dark-mode");
+  if (
+    logo.getAttribute("src") === "/assets/logoo.svg" &&
+    arrow.getAttribute("src") === "/assets/down-arrow.svg"
+  ) {
+    logo.src = "/assets/logoo-dark.svg";
+    arrow.src = "/assets/down-arrow-dark.svg";
+  } else {
+    logo.src = "/assets/logoo.svg";
+    arrow.src = "/assets/down-arrow.svg";
+  }
+}
+
+// darkBtn.addEventListener("click", switchTheme);
+darkBtn.addEventListener("click", changeImg);
+
+const html = document.querySelector("html");
+html.dataset.theme = `theme-light`;
+
+function switchTheme(theme) {
+  html.dataset.theme = `theme-${theme}`;
+}
