@@ -1,6 +1,6 @@
 /***********abstracts*************/
 @import "./partials/variables";
-@import "./partials/mixins.scss";
+@import "./partials/mixins";
 
 /******components********/
 @import "./components/about";
@@ -74,7 +74,10 @@ h3 {
   opacity: 0.8;
   transition: 0.3s ease-in-out;
 }
-
+.body.dark-mode {
+  background-color: black;
+  color: white;
+}
 .dark-btn:hover {
   opacity: 1;
 }
