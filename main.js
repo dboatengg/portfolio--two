@@ -30,22 +30,24 @@ function removeOverflow() {
 }
 
 //change logo and arrow on butotn click
-function changeImg() {
-  // document.body.classList.toggle("dark-mode");
-  if (
-    logo.getAttribute("src") === "/assets/logoo.svg" &&
-    arrow.getAttribute("src") === "/assets/down-arrow.svg"
-  ) {
-    logo.src = "/assets/logoo-dark.svg";
-    arrow.src = "/assets/down-arrow-dark.svg";
-  } else {
-    logo.src = "/assets/logoo.svg";
-    arrow.src = "/assets/down-arrow.svg";
-  }
-}
-
-// darkBtn.addEventListener("click", switchTheme);
-darkBtn.addEventListener("click", changeImg);
+// function changeImg() {
+//   if (
+//     logo.getAttribute("src") === "/assets/logoo.svg" &&
+//     arrow.getAttribute("src") === "/assets/down-arrow.svg"
+//   ) {
+//     logo.src = "/assets/logoo-dark.svg";
+//     arrow.src = "/assets/down-arrow-dark.svg";
+//   } else {
+//     logo.src = "/assets/logoo.svg";
+//     arrow.src = "/assets/down-arrow.svg";
+//   }
+// }
+darkBtn.addEventListener("click", () => {
+  logo.src = "/assets/logoo-dark.svg";
+});
+darkBtn.addEventListener("click", () => {
+  arrow.src = "/assets/down-arrow-dark.svg";
+});
 
 const html = document.querySelector("html");
 html.dataset.theme = `theme-light`;

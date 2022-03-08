@@ -10,7 +10,7 @@
 }
 .nav__link {
   text-decoration: none;
-  color: $text-color;
+  color: var(--text-color);
   margin: auto 2rem;
   font-size: $navigation;
   transition: 0.3s ease-in-out;
@@ -42,12 +42,14 @@
     left: -100%;
     top: 10rem;
     flex-direction: column;
-    background-color: $main-white;
+    background-color: var(--text-color);
     width: 100%;
-    border-radius: 10px;
     text-align: center;
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav__link {
+    color: var(--main-white);
   }
   .nav__menu.active {
     left: 0;
