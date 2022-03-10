@@ -29,19 +29,7 @@ function removeOverflow() {
   document.body.classList.remove("lock-scroll");
 }
 
-//change logo and arrow on butotn click
-// function changeImg() {
-//   if (
-//     logo.getAttribute("src") === "/assets/logoo.svg" &&
-//     arrow.getAttribute("src") === "/assets/down-arrow.svg"
-//   ) {
-//     logo.src = "/assets/logoo-dark.svg";
-//     arrow.src = "/assets/down-arrow-dark.svg";
-//   } else {
-//     logo.src = "/assets/logoo.svg";
-//     arrow.src = "/assets/down-arrow.svg";
-//   }
-// }
+/******change logo and arrow in dark mode*********/
 darkBtn.addEventListener("click", () => {
   logo.src = "/assets/logoo-dark.svg";
 });
