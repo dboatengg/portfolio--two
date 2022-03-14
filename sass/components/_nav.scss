@@ -10,6 +10,9 @@
   background-color: $nav-background;
   box-shadow: 0px 4px 15px $nav-background;
 }
+.nav__menu {
+  display: flex;
+}
 .nav__wrapper {
   @include flex-s-b;
   width: 90%;
@@ -49,9 +52,10 @@
   .nav__menu {
     display: none;
     position: fixed;
+    flex-direction: column;
     top: 0;
     left: 0;
-    padding: 8rem 0;
+    padding: 6rem 0;
     background-color: $background-color;
     width: 100%;
     text-align: center;

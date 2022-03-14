@@ -1,25 +1,46 @@
 @import "../partials/variables";
 /***********projects**********/
 .manage {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
   align-items: center;
-  justify-items: end;
-  margin: 4rem auto;
-  background-color: $nav-background;
-  padding: 2rem;
-  border-radius: 5px;
-  box-shadow: 0px 4px 15px $nav-background;
+  text-align: center;
+  background-color: $card-background;
+  border: 1px solid $card-background;
+  padding: 1.5rem;
+  border-radius: 8px;
+  gap: 1rem;
+  max-width: 400px;
+  // box-shadow: 0px 4px 15px $nav-background;
+}
+.manage img {
+  width: 100px;
+}
+.manage__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
 }
 .manage__sub-description {
   font-size: $sub-text;
 }
 .manage__link {
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .manage__link a {
-  text-decoration: underline;
-  color: $heading;
-  opacity: 0.9;
+  // text-decoration: underline;
+  padding: 0.4rem 0.6rem;
+  color: $link-color;
+  background-color: $link-background;
+  border: 1px solid $link-border;
   transition: 0.2s ease-in-out;
 }
 .manage__link a:hover {
@@ -34,33 +55,11 @@
   color: $heading;
   font-size: 2.5rem;
 }
-.manage__title,
-.manage__description,
-.manage__sub-description {
-  margin-bottom: 2rem;
-}
 
 /*******media query**********/
-@media only screen and (max-width: 768px) {
-  .manage {
-    justify-items: start;
-    max-width: 600px;
-    // margin: auto 0;
-  }
-  .manage__left {
-    order: 2;
-  }
-  .project__img {
-    order: 1;
-  }
-  .manage__title {
-    margin-top: 1.5rem;
-  }
-  .manage__link {
-    flex-direction: column;
-    gap: 2rem;
-  }
-}
+// @media only screen and (max-width: 1024px) {
+
+// }
 
 .project .title {
   color: $title;
