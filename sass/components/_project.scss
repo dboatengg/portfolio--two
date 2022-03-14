@@ -44,6 +44,8 @@
 @media only screen and (max-width: 768px) {
   .manage {
     justify-items: start;
+    max-width: 600px;
+    // margin: auto 0;
   }
   .manage__left {
     order: 2;

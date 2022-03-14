@@ -93,6 +93,12 @@
     width: 5.746rem;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  .hero__title {
+    font-size: $heading__2;
+  }
+}
 /*********about**************/
 .hero {
   height: 90vh;
@@ -137,11 +143,5 @@
   }
   .hero__paragraph {
     font-size: 2.3rem;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .hero {
-    height: 60vh;
   }
 }
