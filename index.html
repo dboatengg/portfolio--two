@@ -7,19 +7,24 @@
     <meta name="author" content="Boateng Dickson" />
     <meta
       name="description"
-      content="Dickson Boateng is a professional frontend developer who's passionate about using technological tools to bring ideas to life in the browser and loves sharing useful tech knowledge with both experienced and beginner beginner developers through blogging and tweeting."
+      content="Dickson Boateng is a software engineer with a focus on frontend development."
     />
     <meta property="og:image" content="./assets/logo.svg" />
-    <meta name="author" content="Boateng Dickson" />
+    <meta
+      name="author"
+      content="Boateng Dickson is a software engineer with a focus on frontend development"
+    />
     <meta
       property="og:description"
-      content="Hello there, I'm Dickson, a frontend developer who is passionate about problem solving and loves bringing ideas to life in the browser. Over the years, I have been self-teaching programming 
-and have acquirred a wealth of knowledge in frontend development (HTML, CSS, JavaScript, JQuery & React)."
+      content="Boateng Dickson is a software engineer with a focus on frontend development"
     />
     <meta property="og:title" content="Boateng Dickson" />
-    <meta name="twitter:title" content="Boateng Dickson - portfolio website" />
+    <meta
+      name="twitter:title"
+      content="Boateng Dickson is a software engineer with a focus on frontend development"
+    />
 
-    <title>Boateng Dickson - home</title>
+    <title>Boateng Dickson</title>
     <link
       rel="icon"
       type="image/png"
@@ -54,66 +59,61 @@ and have acquirred a wealth of knowledge in frontend development (HTML, CSS, Jav
   </head>
 
   <body>
-    <main class="project">
-      <header>
-        <!--------------nav------------->
-        <nav class="nav">
+    <header>
+      <!--------------nav------------->
+      <nav class="nav">
+        <div class="nav__wrapper">
           <a href="index.html"
-            ><img class="logo" id="logo" src="assets/logoo.svg" alt=""
+            ><img class="logo" id="logo" src="assets/db.svg" alt=""
           /></a>
           <ul class="nav__menu">
             <li class="nav__item">
-              <a class="nav__link active" href="index.html">Home</a>
+              <a class="nav__link" href="index.html">Home</a>
             </li>
             <li class="nav__item">
               <a class="nav__link" href="project.html">Work</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav__item">
               <a class="nav__link" href="about.html">About</a>
             </li>
-            <!-- <li class="nav__item"><a class="nav__link" href="#footer">Contact</a></li> -->
           </ul>
           <div class="hamburger">
-            <span onclick="lockScroll();" class="bar"></span>
-            <span onclick="lockScroll();" class="bar"></span>
-            <span onclick="lockScroll();" class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
           </div>
-        </nav>
-      </header>
-
-      <!------------ dark/light mode  ------>
-      <button class="dark-btn" onclick="switchTheme('dark')">
-        <i class="fa fa-moon fa-2x"></i>
-      </button>
-
-      <!----------------about------------>
-      <main class="">
-        <section class="hero">
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__wrapper">
+        <!----------------about------------>
+        <section class="">
+        <section style="margin-top: 0;padding-top: 8rem;" class="hero">
           <div class="hero__content">
             <div class="hero__text">
               <h1 class="hero__title">Hello, I'm Dickson Boateng.</h1>
               <p class="hero__paragraph">
-                A frontend developer who's passionate about bringing ideas to
-                life in the browser.
+                A frontend developer who's passionate about bringing ideas to life
+                in the browser.
               </p>
             </div>
             <a href="#project"
-              ><img class="arrow" src="assets/down-arrow.svg" alt=""
+              ><img class="arrow" src="assets/arrow.svg" alt=""
             /></a>
           </div>
         </section>
         <!---------------project------------>
         <section class="project" id="project">
-          <div class="manage grid grid--1x2">
+          <h1 class="title">RECENT PROJECTS</h1>
+          <hr style="margin-bottom: 2rem;">
+          <div style="margin-top: 0;" class="manage grid grid--1x2">
             <div class="manage__left">
               <h1 class="manage__title">01/Sponsor My Education</h1>
               <p class="manage__description">
-                Sponsor My Education is a Non-Governmental Organization (NGO)
-                that seeks to provide free tertiary education and scholarships
-                to those who are in need.
+                Sponsor My Education is a Non-Governmental Organization (NGO) that
+                seeks to provide free tertiary education and scholarships to those
+                who are in need.
               </p>
               <p class="manage__sub-description">
                 Technologies used: Html, Css, Scss & JavaScript
@@ -134,14 +134,14 @@ and have acquirred a wealth of knowledge in frontend development (HTML, CSS, Jav
             </div>
             <img class="project__img" src="assets/clipboardc.png" alt="" />
           </div>
-          <hr />
+          <!-- <hr /> -->
           <div class="manage grid grid--1x2">
             <div class="manage__left">
               <h1 class="manage__title">02/Guitarly</h1>
               <p class="manage__description">
                 Guitarly is landing page collaboration project with a colleague
-                designer. Guitarly is a website for a business that teaches
-                people how to play the guitar.
+                designer. Guitarly is a website for a business that teaches people
+                how to play the guitar.
               </p>
               <p class="manage__sub-description">
                 Technologies used: Html, Css, Scss & JavaScript
@@ -158,16 +158,23 @@ and have acquirred a wealth of knowledge in frontend development (HTML, CSS, Jav
                 ></a>
               </div>
             </div>
-            <img class="project__img" src="assets/hero-md.png" alt="" />
+            <picture>
+              <source media="(min-width: 900px)" srcset="assets/hero-mdd.png" />
+              <source srcset="assets/hero-md.png" />
+              <img
+                src="assets/hero-md.png"
+                alt="A beautiful girl playing guitar"
+              />
+            </picture>
           </div>
-          <hr />
-          <div class="manage grid grid--1x2">
+          <!-- <hr /> -->
+          <div style="margin-bottom: 0;" class="manage grid grid--1x2">
             <div class="manage__left">
               <h1 class="manage__title">03/Portfolio Website</h1>
               <p class="manage__description">
                 A personal portfolio website to display the amazing works of a
-                developer. It includes two other pages, a blog and contact
-                section for visitors to reach out to the developer.
+                developer. It includes two other pages, a blog and contact section
+                for visitors to reach out to the developer.
               </p>
               <p class="manage__sub-description">
                 Technologies used: Html, Css, Sass & JavaScript
@@ -186,11 +193,50 @@ and have acquirred a wealth of knowledge in frontend development (HTML, CSS, Jav
             </div>
             <img class="project__img" src="assets/manage.jpg" alt="" />
           </div>
-          <hr />
+          <!-- <hr /> -->
         </section>
-      </main>
-      <!------------footer--------------->
-      <footer class="footer" id="footer">
+
+        <section style="margin-top: 8rem;" class="blog">
+          <div class="blog__wrapper">
+            <h1 class="blog__title">RECENT BLOG POSTS</h1>
+            <hr>
+            <br>
+            <div class="blogs">
+        <div class="blog__box">
+            <div class="wrapper">
+                <h1 class="blog__box-title">How to Build a Modal Popup Box Using HTML, CSS, and JavaScript</h1>
+                <p class="">A Modal Popup Box is a popup window that is used to prompt users to take a certain action while browsing on a website page. Modal popups are pretty common on the web...</p>
+                <a class="blog__btn" target="_blank" href="https://dev.to/dboatenggg/how-to-build-a-modal-popup-box-using-html-css-and-javascript-3ofj">Read more</a>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div class="blog__box">
+            <div class="wrapper">
+                <h1 class="blog__box-title">Build A Real-time Changing Digital Clock Using HTML, CSS & JavaScript</h1>
+                <p class="">HTML, CSS and JavaScript are used for building stylish, dynamic web elements and one useful element we can build is a digital clock....
+                </p>
+                <a class="blog__btn" target="_blank" href="https://dev.to/dboatenggg/build-a-real-time-changing-digital-clock-using-html-css-javascript-689">Read more</a>
+            </div>
+        </div>
+        <!-- <hr> -->
+        <div class="blog__box">
+            <div class="wrapper">
+                <h1 class="blog__box-title">A Quick Introduction to Block-Element-Modifier (BEM) for Beginners</h1>
+                <p class="">Naming things has never been easy in CSS and programming in general. If you have worked with CSS on any project before, you will realize that naming classes....
+                    </p>
+                    <a class="blog__btn" target="_blank" href="https://dev.to/dboatenggg/a-quick-introduction-to-block-element-modifier-bem-for-beginners-34fg">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <br>
+      
+    </main>
+    <!------------footer--------------->
+    <footer class="footer" id="footer">
+      <div class="footer__wrapper">
         <p class="copyright">All rights reserved, Boateng Dickson.</p>
         <div class="social">
           <a class="social__link" href="mailto:dicksonboateng67@gmail.com"
@@ -225,9 +271,9 @@ and have acquirred a wealth of knowledge in frontend development (HTML, CSS, Jav
             ><i class="fa fa-github-square"></i
           ></a>
         </div>
-      </footer>
-      <!---------------end-------------------->
-    </main>
+      </div>
+    </footer>
+    <!---------------end-------------------->
     <script src="main.js"></script>
   </body>
 </html>

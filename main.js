@@ -29,7 +29,7 @@ function removeOverflow() {
   document.body.classList.remove("lock-scroll");
 }
 
-/******change logo and arrow in dark mode*********/
+/******change logo and arrow in dark mode*******/
 darkBtn.addEventListener("click", () => {
   logo.src = "/assets/logoo-dark.svg";
 });

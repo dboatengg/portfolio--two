@@ -7,22 +7,20 @@
     <meta name="author" content="Boateng Dickson" />
     <meta
       name="description"
-      content="This is a professional portfolio website designed and coded by Boateng Dickson. Boateng Dickson is 
-    a frontend developer and passionate problem solver who loves bringing ideas to life in the browser.
-    This website contains some interesting projetcs done using web technologies such as HTML, CSS, SCSS, JavaScript and among others"
+      content="Boateng Dickson is a software engineer with a focus on frontend development "
     />
     <meta property="og:image" content="./assets/logo.svg" />
-    <meta name="author" content="Boateng Dickson" />
     <meta
       property="og:description"
-      content="This is a professional portfolio website designed and coded by Boateng Dickson. Boateng Dickson is 
-a frontend developer and passionate problem solver who loves bringing ideas to life in the browser.
-This website contains some interesting projetcs done using web technologies such as HTML, CSS, SCSS, JavaScript and among others"
+      content="Boateng Dickson is software engineer with a focus on frontend development"
     />
     <meta property="og:title" content="Boateng Dickson" />
-    <meta name="twitter:title" content="Boateng Dickson - portfolio website" />
+    <meta
+      name="twitter:title"
+      content="Boateng Dickson is a software engineer with a focus on frontend development"
+    />
 
-    <title>Boateng Dickson - About Page</title>
+    <title>About</title>
     <link
       style="object-fit: cover; width: 100%; height: 100%"
       rel="icon"
@@ -38,7 +36,7 @@ This website contains some interesting projetcs done using web technologies such
       src="https://kit.fontawesome.com/fc5c7c40e3.js"
       crossorigin="anonymous"
     ></script>
-    <!-------------------google fonts-------------->
+    <!------------------- fonts-------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,7 +44,6 @@ This website contains some interesting projetcs done using web technologies such
       rel="stylesheet"
     />
 
-    <!------------------ Oswald google font  --------------->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -59,146 +56,128 @@ This website contains some interesting projetcs done using web technologies such
     <header>
       <!--------------nav------------->
       <nav class="nav">
-        <a href="index.html"
-          ><img class="logo" id="logo" src="assets/logoo.svg" alt=""
-        /></a>
-        <ul class="nav__menu">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="project.html">Work</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="blog.html">Blog</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link active" href="#">About</a>
-          </li>
-          <!-- <li class="nav__item"><a class="nav__link" href="#footer">Contact</a></li> -->
-        </ul>
-        <div class="hamburger">
-          <span onclick="lockScroll();" class="bar"></span>
-          <span onclick="lockScroll();" class="bar"></span>
-          <span onclick="lockScroll();" class="bar"></span>
+        <div class="nav__wrapper">
+          <a href="index.html"
+            ><img class="logo" id="logo" src="assets/db.svg" alt=""
+          /></a>
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="project.html">Work</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </div>
       </nav>
     </header>
 
-    <!------------ dark/light mode  ------>
-    <button class="dark-btn" onclick="switchTheme('dark')">
-      <i class="fa fa-moon fa-2x"></i>
-    </button>
-
-    <!---------------- about  ------------->
-    <section class="about">
-      <div class="about__content">
-        <div class="who grid grid--1x2">
-          <div class="who__left">
-            <h1 class="who__title">Hello, I'm Dickson Boateng.</h1>
-            <p class="who__description">
-              I'm a passionate frontend developer with a passion for problem
-              solving and loves using technological tools to bring ideas to life
-              in the browser.
-            </p>
-            <br />
-            <p class="who__description">
-              Teaching others is a great way to reinforce what I have learnt so
-              I love to constantly share my ideas through blogging.
-            </p>
+    <main>
+      <div class="main__wrapper">
+        <!---------------- about  ------------->
+        <section class="about">
+          <div class="about__wrapper">
+            <h1 class="about__title light">About</h1>
+            <div class="about__intro">
+              <h2 class="light">Hey I'm Boateng Dickson.</h2>
+              <p>
+                I'm a frontend developer and technical writer originally from
+                Kumasi, Ghana.
+              </p>
+            </div>
+            <!-- <br /> -->
+            <div class="about__sub-intro">
+              <h2 class="light">
+                I have always been a fan of computers and how they operate...
+              </h2>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                autem esse explicabo eos ex quo magni, tempora est eveniet
+                suscipit! Quis atque harum quasi et dignissimos alias sint modi
+                quidem id perferendis, sequi sapiente dolorem ex possimus quae.
+                Officia aliquam adipisci quae illo incidunt ut quia, ullam iste
+                doloribus sunt pariatur laudantium aspernatur temporibus
+                architecto voluptates? Pariatur est unde explicabo?
+              </p>
+            </div>
+            <div class="about__sub-intro">
+              <h2 class="light">
+                Now, I want to help others find joy in coding too...
+              </h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+                dignissimos beatae ratione commodi rerum atque hic, nisi, libero
+                sed suscipit accusantium facilis odit nobis voluptatum dolorum
+                accusamus!
+              </p>
+            </div>
+            <div class="about__sub-intro">
+              <h2 class="light">If you want to know me personally</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias, repudiandae expedita voluptatibus aut dolores
+                corrupti libero maxime accusamus, quia asperiores cumque placeat
+                magni nulla officiis voluptatem cum veritatis sunt impedit?
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum
+                sed suscipit mollitia voluptate, exercitationem earum id quos
+                illo ut dolorum asperiores quisquam vero! Asperiores ducimus
+                aut, veritatis sed earum excepturi deserunt neque ratione animi,
+                explicabo, molestiae aspernatur velit soluta repellat.
+              </p>
+            </div>
+            <img class="about__img" src="assets/Boateng Dickson.jpeg" alt="" />
           </div>
-          <div class="who__right">
-            <img class="about__img" src="assets/avatar.webp" alt="" />
-          </div>
-        </div>
-        <div class="readmore">
-          <h1 class="readmore__title">MY JOURNEY TO WEB DEVELOPMENT</h1>
-          <p>
-            My web development journey began in early 2020, amid the epidemic. I
-            began exploring several domains to see which would be the greatest
-            fit for me. I started by learning Python and took a few courses on
-            Coursera, but after discovering that web programming was my true
-            passion, I switched to JavaScript.
-          </p>
-          <br />
-          <p>
-            I took a handful of online courses which focused on both
-            fundamentals and advanced topics in web development. After that, a
-            software engineering friend advised me to get active on Tech
-            Twitter. I believe it was the finest advise I ever received since
-            through Twitter, I was introduced to a wealth of valuable web
-            development resources and people who were eager to assist me.
-          </p>
-          <br />
-          <p>
-            Fast forward to early-2022, and I've completed a variety of good
-            major and minor projects in which I've put what I've learned into
-            practical use, as well as some freelance work for clients both
-            online and in person. The journey has been amazing and I look
-            forward to keep pushing myself to new heights.
-          </p>
-          <br />
-          <p>Cheers!</p>
-        </div>
-        <div class="skills">
-          <div class="software grid grid--1x2">
-            <p class="software__title">Tools:</p>
-            <p>VS Code, Figma, Photoshop, Github & Adobe XD</p>
-          </div>
-          <div class="software grid grid--1x2">
-            <p class="software__title">Main Skills:</p>
-            <p>Html, CSS, Scss, JavaScript,JQuery, Bootstrap & Git</p>
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
-    <hr />
-    <section class="msg">
-      <p class="msg__left">
-        Thanks for showing interest in my work. Feel free to send me a message
-      </p>
-      <div class="msg__right">
-        <a class="resume" href="assets/01BOATENG_DICKSON_Resume.PDF" download
-          ><i class="fa fa-arrow-down-to-line"></i>Download Resume</a
-        >
-      </div>
-    </section>
-
+    </main>
     <!------------footer--------------->
     <footer class="footer" id="footer">
-      <p class="copyright">All rights reserved, Boateng Dickson.</p>
-      <div class="social">
-        <a class="social__link" href="mailto:dicksonboateng67@gmail.com"
-          ><i class="fa fa-envelope"></i
-        ></a>
-        <a
-          class="social__link"
-          href="http://www.twitter.com/dboatengg"
-          target="_blank"
-          rel="reoopener"
-          ><i class="fa fa-twitter"></i
-        ></a>
-        <a
-          class="social__link"
-          href="https://www.linkedin.com/in/dickson-boateng-1796a8171/"
-          target="_blank"
-          rel="reoopener"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-        <a
-          class="social__link"
-          href="https://codepen.io/Boatengg"
-          target="_blank"
-          rel="reoopener"
-          ><i class="fa fa-codepen"></i
-        ></a>
-        <a
-          class="social__link"
-          href="https://github.com/dboatengg"
-          target="_blank"
-          rel="reoopener"
-          ><i class="fa fa-github-square"></i
-        ></a>
+      <div class="footer__wrapper">
+        <p class="copyright">All rights reserved, Boateng Dickson.</p>
+        <div class="social">
+          <a class="social__link" href="mailto:dicksonboateng67@gmail.com"
+            ><i class="fa fa-envelope"></i
+          ></a>
+          <a
+            class="social__link"
+            href="http://www.twitter.com/dboatengg"
+            target="_blank"
+            rel="reoopener"
+            ><i class="fa fa-twitter"></i
+          ></a>
+          <a
+            class="social__link"
+            href="https://www.linkedin.com/in/dickson-boateng-1796a8171/"
+            target="_blank"
+            rel="reoopener"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a
+            class="social__link"
+            href="https://codepen.io/Boatengg"
+            target="_blank"
+            rel="reoopener"
+            ><i class="fa fa-codepen"></i
+          ></a>
+          <a
+            class="social__link"
+            href="https://github.com/dboatengg"
+            target="_blank"
+            rel="reoopener"
+            ><i class="fa fa-github-square"></i
+          ></a>
+        </div>
       </div>
     </footer>
     <!---------------end-------------------->

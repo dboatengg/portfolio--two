@@ -1,20 +1,12 @@
 /*************light mode*********/
-$main-black: #181717;
-$text-color: #181717;
-$note: #181717;
-$main-gray: #606060;
-$main-white: #f3f3f3;
-
-/**********dark mode********/
-$main-black-dark: #211806;
-$text-color-dark: #f1e2c0;
-
-/**********darker mode********/
-// $secondary: #6b4a00;
-// $text__color: #b3b9c5;
-// $main-white: #252525;
-// $note: #6b4a00;
-
+$background-color: #181717;
+$text-color: rgba(235, 240, 255, 0.6);
+$link: #181717;
+$button: #606060;
+$heading: rgb(253, 181, 74);
+$title: rgb(238, 238, 238);
+$nav-background: rgb(28, 30, 36);
+$nav__link: rgb(208, 213, 223);
 /*******text*********/
 $heading__1: 6rem;
 $heading__2: 3.2rem;

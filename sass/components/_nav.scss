@@ -1,8 +1,20 @@
+@import "../partials/variables";
+
 /**********nav-menu*******/
 .nav {
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  // height: 100px;
+  padding: 1rem;
+  background-color: $nav-background;
+  box-shadow: 0px 4px 15px $nav-background;
+}
+.nav__wrapper {
   @include flex-s-b;
-  margin: 5rem auto;
-  font-family: "Oswald";
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .nav__item {
   list-style-type: none;
@@ -16,7 +28,6 @@
   transition: 0.3s ease-in-out;
   font-weight: 500;
 }
-// .nav__link:hover {color: $main-black;}
 .logo {
   width: 6.746rem;
 }
@@ -29,30 +40,29 @@
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in-out;
-  background-color: var(--text-color);
+  background-color: $title;
 }
 
 @media only screen and (max-width: 768px) {
   .nav__menu {
-    display: flex;
-    flex-direction: column;
+    display: none;
     position: fixed;
-    left: -100%;
-    top: 10rem;
-    flex-direction: column;
-    background-color: var(--text-color);
+    top: 0;
+    left: 0;
+    padding: 8rem 0;
+    background-color: $background-color;
     width: 100%;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav__menu.active {
+    display: block;
   }
   .nav__link {
     color: var(--main-white);
-  }
-  .nav__menu.active {
-    left: 0;
   }
 
   .nav__item {
@@ -62,6 +72,7 @@
     display: block;
     cursor: pointer;
     padding: 2rem;
+    z-index: 9999;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -84,9 +95,11 @@
 }
 /*********about**************/
 .hero {
-  height: 75vh;
+  height: 90vh;
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .hero__text {
   @include flex-s-b;
@@ -97,9 +110,11 @@
   letter-spacing: -3%;
   line-height: 97.2%;
   font-weight: 500;
+  color: $title;
 }
 .hero__paragraph {
   font-size: $heading__2;
+  color: $title;
 }
 .arrow {
   margin-top: 7rem;
