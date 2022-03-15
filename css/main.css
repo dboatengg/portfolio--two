@@ -214,6 +214,7 @@
 @media only screen and (max-width: 768px) {
   .hero {
     margin: 7rem auto;
+    height: 80vh;
   }
   .hero__text {
     -webkit-box-orient: vertical;
