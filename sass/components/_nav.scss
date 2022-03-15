@@ -5,10 +5,9 @@
   position: sticky;
   top: 0;
   z-index: 999999;
-  // height: 100px;
   padding: 1rem;
   background-color: $nav-background;
-  box-shadow: 0px 4px 15px $nav-background;
+  // box-shadow: 0px 4px 15px $nav-background;
 }
 .nav__menu {
   display: flex;
@@ -31,9 +30,13 @@
   transition: 0.3s ease-in-out;
   font-weight: 500;
 }
-.logo {
-  width: 6.746rem;
+.nav__link:hover {
+  color: $title;
 }
+.logo {
+  width: 60px;
+}
+
 /*******hamburger********/
 .hamburger {
   display: none;

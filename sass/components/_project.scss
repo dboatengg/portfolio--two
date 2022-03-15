@@ -4,18 +4,18 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
-  align-items: center;
-  text-align: center;
+  align-items: left;
+  text-align: left;
   background-color: $card-background;
   border: 1px solid $card-background;
   padding: 1.5rem;
   border-radius: 8px;
   gap: 1rem;
   max-width: 400px;
-  // box-shadow: 0px 4px 15px $nav-background;
 }
 .manage img {
   width: 100px;
+  flex-grow: 1;
 }
 .manage__content {
   display: flex;
@@ -30,18 +30,19 @@
 .manage__link {
   display: flex;
   gap: 1rem;
-  justify-content: center;
+  justify-content: left;
   margin: 1rem 0;
+  text-align: left;
   font-size: 1.5rem;
   font-weight: 600;
 }
 .manage__link a {
-  // text-decoration: underline;
-  padding: 0.4rem 0.6rem;
+  padding: 0.6rem 0.8rem;
   color: $link-color;
   background-color: $link-background;
   border: 1px solid $link-border;
   transition: 0.2s ease-in-out;
+  border-radius: 5px;
 }
 .manage__link a:hover {
   opacity: 1;
@@ -57,9 +58,11 @@
 }
 
 /*******media query**********/
-// @media only screen and (max-width: 1024px) {
-
-// }
+@media only screen and (max-width: 1024px) {
+  .manage__content {
+    justify-content: center;
+  }
+}
 
 .project .title {
   color: $title;
