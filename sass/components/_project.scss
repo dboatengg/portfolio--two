@@ -5,7 +5,7 @@
   flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: left;
-  text-align: left;
+  // text-align: left;
   background-color: $card-background;
   border: 1px solid $card-background;
   padding: 1.5rem;
@@ -20,7 +20,7 @@
 .manage__content {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
   gap: 20px;
 }
