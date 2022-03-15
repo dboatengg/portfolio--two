@@ -5,7 +5,6 @@
   flex-direction: column-reverse;
   justify-content: flex-start;
   align-items: left;
-  // text-align: left;
   background-color: $card-background;
   border: 1px solid $card-background;
   padding: 1.5rem;
@@ -33,11 +32,11 @@
   justify-content: left;
   margin: 1rem 0;
   text-align: left;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.7rem;
+  font-weight: 500;
 }
 .manage__link a {
-  padding: 0.6rem 0.8rem;
+  padding: 0.8rem 1rem;
   color: $link-color;
   background-color: $link-background;
   border: 1px solid $link-border;
