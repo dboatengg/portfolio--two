@@ -107,7 +107,10 @@
 @media only screen and (max-width: 768px) {
   .nav__menu {
     display: none;
-    position: fixed;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -128,6 +131,7 @@
   }
   .nav__link {
     color: var(--main-white);
+    margin: 0;
   }
   .nav__item {
     margin: 2.5rem 0;
@@ -636,7 +640,7 @@ main {
   background-color: #282c34;
 }
 
-.active {
+.activeee {
   color: white;
 }
 /*# sourceMappingURL=main.css.map */

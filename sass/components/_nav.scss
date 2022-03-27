@@ -8,7 +8,6 @@
   padding: 1rem;
   background-color: $nav-background;
   border-bottom: 1px solid $card-background;
-  // box-shadow: 0px 4px 15px $nav-background;
 }
 .nav__menu {
   display: flex;
@@ -55,7 +54,8 @@
 @media only screen and (max-width: 768px) {
   .nav__menu {
     display: none;
-    position: fixed;
+    position: absolute;
+    display: flex;
     flex-direction: column;
     top: 0;
     left: 0;
@@ -71,6 +71,7 @@
   }
   .nav__link {
     color: var(--main-white);
+    margin: 0;
   }
 
   .nav__item {
