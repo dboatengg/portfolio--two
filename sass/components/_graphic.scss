@@ -10,3 +10,9 @@
 .graphic__works .work {
   width: 40%;
 }
+
+@media only screen and (max-width: 768px) {
+  .graphic__works .work {
+    width: 100%;
+  }
+}
