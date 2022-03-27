@@ -9,6 +9,7 @@
 @import "./components/project";
 @import "./components/blog";
 @import "./components/skills";
+@import "./components/graphic";
 
 /***fonts****/
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap");
@@ -48,4 +49,8 @@ img {
 }
 main {
   background-color: rgb(40, 44, 52);
+}
+
+.active {
+  color: white;
 }

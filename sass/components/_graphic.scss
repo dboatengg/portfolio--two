@@ -1,0 +1,12 @@
+@import "../partials/variables";
+.graphic__works {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.graphic__works .work {
+  width: 40%;
+}

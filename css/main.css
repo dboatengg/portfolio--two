@@ -41,6 +41,7 @@
   z-index: 999999;
   padding: 1rem;
   background-color: #1c1e24;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav__menu {
@@ -246,6 +247,7 @@
 .footer {
   padding: 2rem 0;
   background-color: #1c1e24;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .footer__wrapper {
@@ -557,6 +559,28 @@
   background: #4158d0;
 }
 
+/*************light mode*********/
+/*******text*********/
+/*****font weight*******/
+.graphic__works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+
+.graphic__works .work {
+  width: 40%;
+}
+
 /***fonts****/
 /**********css reset**********/
 html {
@@ -600,5 +624,9 @@ img {
 
 main {
   background-color: #282c34;
+}
+
+.active {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
