@@ -1,0 +1,40 @@
+@import "../partials/variables";
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: "Baloo 2", sans-serif;
+  scroll-padding-top: 100px;
+  background-color: rgb(40, 44, 52);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  margin: 0 auto !important;
+  font-weight: 300;
+  color: $text-color;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.main__wrapper {
+  margin: 0 auto;
+  max-width: 900px;
+  width: 90%;
+}
+main {
+  background-color: rgb(40, 44, 52);
+}
+
+.activeee {
+  color: white;
+}

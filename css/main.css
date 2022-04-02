@@ -603,8 +603,9 @@
   }
 }
 
-/***fonts****/
-/**********css reset**********/
+/*************light mode*********/
+/*******text*********/
+/*****font weight*******/
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -651,4 +652,6 @@ main {
 .activeee {
   color: white;
 }
+
+/***fonts****/
 /*# sourceMappingURL=main.css.map */
