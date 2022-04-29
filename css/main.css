@@ -39,7 +39,7 @@
   position: sticky;
   top: 0;
   z-index: 999999;
-  padding: 1rem;
+  padding: 2rem 0;
   background-color: #1c1e24;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -89,7 +89,7 @@
 }
 
 .logo {
-  width: 60px;
+  width: 50px;
 }
 
 /*******hamburger********/
@@ -505,10 +505,12 @@
   display: block;
   background-color: #fdb54a;
   color: #eeeeee;
-  padding: 1rem 1.5rem;
+  padding: 1rem 2rem;
   width: auto;
   border-radius: 2px;
   font-size: 1.3rem;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media only screen and (max-width: 911px) {
