@@ -525,6 +525,20 @@
   }
 }
 
+/***main blog page***/
+.blog-scr {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .circular {
   height: 100px;
   width: 100px;
