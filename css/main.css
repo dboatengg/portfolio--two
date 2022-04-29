@@ -109,6 +109,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .nav {
+    padding: 1rem;
+  }
   .nav__menu {
     display: none;
     -webkit-box-orient: vertical;
@@ -537,7 +540,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 80vw;
+  width: 90vw;
   margin: auto;
 }
 

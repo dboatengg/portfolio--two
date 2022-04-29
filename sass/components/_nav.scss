@@ -53,6 +53,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .nav {
+    padding: 1rem;
+  }
   .nav__menu {
     display: none;
     flex-direction: column;
@@ -111,6 +114,7 @@
     font-size: $heading__2;
   }
 }
+
 /*********about**************/
 .hero {
   height: 90vh;
